@@ -1,5 +1,10 @@
 from PIL import Image
 
+"""
+A program that builds RAG backgrounds for charts.
+
+"""
+
 # define dimensions 
 width_height_Red =  (120, 300) 
 width_height_Amber =  (30, 300) 
@@ -20,6 +25,5 @@ def get_concat_h(img1, img2, img3):
     cvs.paste(img2, (img1.width, 0))
     cvs.paste(img3, (img1.width + img2.width, 0))
     return cvs
-
 
 get_concat_h(img1, img2, img3)
